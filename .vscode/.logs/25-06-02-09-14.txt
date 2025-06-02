@@ -1,0 +1,2044 @@
+25-06-02 09:14 Session started
+----------------------------------------
+09:15:55 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:15:58 007:000 > Title="GymApp" SizeToContent="WidthAndHeight"
+        Background="#f2db59">
+    <StackPanel Margin="10">
+        <Label Content="Träningspass" FontSize="30" FontWeight="Bold" Margin="0,0,0,10"/>
+        <Label Content="Del 1: Skapa och spara träningspass" FontSize="16" Margin="0,0,0,10"/>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="200" Content="Aktivitet:"/>
+            <TextBox Width="150" Name="txbAktivitet" Margin="0,0,0,10"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="200" Content="Längd (minuter):"/>
+            <TextBox Width="150" Name="txbLangd" Margin="0,0,0,10"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="200" Content="Intensitet (Låg, Medel, Hög):"/>
+            <TextBox Width="150" Name="txbIntensitet" Margin="0,0,0,10"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Kontrollera pass" Click="KlickVisa" Width="100" Margin="5" Padding="5"/>
+            <Button Content="Spara pass" Click="KlickSpara" Width="100" Margin="5" Padding="5"/>
+            <Button Content="Visa alla pass" Click="KlickVisaPass" Width="120" Margin="5" Padding="5"/>
+        </StackPanel>
+        <Label Content="Resultat:" FontWeight="Bold" Margin="0,5,0,5"/>
+        <TextBox Name="txbPass" Margin="0,0,0,10" IsReadOnly="True"/>
+        <Label Content="Sparade pass i listan:" FontWeight="Bold" Margin="0,5,0,5"/>
+        <TextBox Name="txbLista" Height="80" IsReadOnly="True"/>
+
+        <Label Content="Del 2: Visa statistik" FontSize="16" Margin="0,20,0,10"/>
+        <Button Content="Visa statistik" Click="KlickVisaStatistik" Width="120" Margin="5" Padding="5" HorizontalAlignment="Left"/>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="200" Content="Antal pass:"/>
+            <TextBox Width="150" Name="txbAntalPass" Margin="0,0,0,10" IsReadOnly="True"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="200" Content="Total längd (minuter):"/>
+            <TextBox Width="150" Name="txbTotalMinuter" Margin="0,0,0,10" IsReadOnly="True"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="200" Content="Längsta pass:"/>
+            <TextBox Width="150" Name="txbMaxMinuter" Margin="0,0,0,10" IsReadOnly="True"/>
+        </StackPanel>
+    </StackPanel>
+09:16:02 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:16:03 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\global.json
+----------------------------------------
+09:16:04 000:000 > 2025-06-02 09:14:42.049 [info] Locating .NET runtime version 9.0.1
+2025-06-02 09:14:43.594 [info] Dotnet path: C:\Program Files\dotnet\dotnet.exe
+2025-06-02 09:14:43.594 [info] Activating C# standalone...
+2025-06-02 09:14:50.335 [info] [stdout] {"pipeName":"\\\\.\\pipe\\c5eb39a3"}
+
+2025-06-02 09:14:50.336 [info] received named pipe information from server
+2025-06-02 09:14:50.337 [info] client has connected to server
+2025-06-02 09:14:50.725 [info] [Info  - 9:14:50 AM] [Program] Language server initialized
+2025-06-02 09:16:04.461 [info] Installing C# dependencies...
+2025-06-02 09:16:04.461 [info] 
+
+2025-06-02 09:16:04.462 [info] Platform: win32, x86_64
+
+2025-06-02 09:16:04.462 [info] 
+
+2025-06-02 09:16:04.462 [info] Downloading package 'OmniSharp for Windows (.NET 6 / x64)'
+09:16:05 016:000 > 2025-06-02 09:16:05.585 [info] (48514 KB)
+2025-06-02 09:16:05.586 [info] .
+09:16:06 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:16:06 018:000 > 2025-06-02 09:16:06.652 [info]
+09:16:07 019:000 > 2025-06-02 09:16:06.992 [info]
+09:16:07 020:000 > 2025-06-02 09:16:07.195 [info]
+09:16:07 021:000 > 2025-06-02 09:16:07.361 [info]
+09:16:07 022:000 > 2025-06-02 09:16:07.540 [info] .
+09:16:07 023:000 > 2025-06-02 09:16:07.695 [info]
+09:16:07 024:000 > 2025-06-02 09:16:07.795 [info]
+09:16:07 025:000 > 2025-06-02 09:16:07.872 [info]
+09:16:08 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:16:08 026:000 > 2025-06-02 09:16:08.163 [info] 
+2025-06-02 09:16:08.202 [info] .
+2025-06-02 09:16:08.281 [info]
+09:16:08 029:000 > 2025-06-02 09:16:08.345 [info]
+09:16:08 030:000 > 2025-06-02 09:16:08.435 [info]
+09:16:08 031:000 > 2025-06-02 09:16:08.459 [info]
+09:16:08 032:000 > 2025-06-02 09:16:08.599 [info] .
+09:16:08 033:000 > 2025-06-02 09:16:08.945 [info]
+09:16:09 034:000 > 2025-06-02 09:16:09.352 [info] 
+2025-06-02 09:16:09.381 [info]
+09:16:09 036:000 > 2025-06-02 09:16:09.418 [info]
+09:16:09 037:000 > 2025-06-02 09:16:09.876 [info] .
+2025-06-02 09:16:09.882 [info]
+09:16:10 039:000 > 2025-06-02 09:16:10.001 [info] 
+2025-06-02 09:16:10.160 [info]
+09:16:10 041:000 > 2025-06-02 09:16:10.548 [info] 
+2025-06-02 09:16:10.610 [info] .
+09:16:10 043:000 > 2025-06-02 09:16:10.909 [info]
+09:16:11 044:000 > 2025-06-02 09:16:11.089 [info]
+09:16:11 045:000 > 2025-06-02 09:16:11.127 [info]
+09:16:11 046:000 > 2025-06-02 09:16:11.327 [info]
+09:16:11 047:000 > 2025-06-02 09:16:11.514 [info] .
+09:16:11 048:000 > 2025-06-02 09:16:11.706 [info]
+09:16:11 049:000 > 2025-06-02 09:16:11.909 [info]
+09:16:12 050:000 > 2025-06-02 09:16:12.109 [info]
+09:16:12 051:000 > 2025-06-02 09:16:12.425 [info]
+09:16:12 052:000 > 2025-06-02 09:16:12.493 [info] .
+09:16:12 053:000 > 2025-06-02 09:16:12.687 [info]
+09:16:12 054:000 > 2025-06-02 09:16:12.872 [info]
+09:16:13 055:000 > 2025-06-02 09:16:13.582 [info]
+09:16:15 056:000 > 2025-06-02 09:16:15.293 [info]
+09:16:15 057:000 > 2025-06-02 09:16:15.302 [info] .
+09:16:15 058:000 > 2025-06-02 09:16:15.937 [info]
+09:16:16 059:000 > 2025-06-02 09:16:16.854 [info]
+09:16:17 060:000 > 2025-06-02 09:16:17.477 [info]
+09:16:18 061:000 > 2025-06-02 09:16:18.276 [info]
+09:16:19 062:000 > 2025-06-02 09:16:19.043 [info] .
+09:16:19 063:000 > 2025-06-02 09:16:19.817 [info]
+09:16:20 064:000 > 2025-06-02 09:16:20.618 [info]
+09:16:21 065:000 > 2025-06-02 09:16:21.382 [info]
+09:16:22 066:000 > 2025-06-02 09:16:22.157 [info]
+09:16:22 067:000 > 2025-06-02 09:16:22.948 [info] .
+09:16:23 068:000 > 2025-06-02 09:16:23.726 [info]
+09:16:24 069:000 > 2025-06-02 09:16:24.498 [info]
+09:16:25 070:000 > 2025-06-02 09:16:25.296 [info]
+09:16:26 071:000 > 2025-06-02 09:16:26.069 [info]
+09:16:26 072:000 > 2025-06-02 09:16:26.839 [info] .
+09:16:27 073:000 > 2025-06-02 09:16:27.620 [info]
+09:16:28 074:000 > 2025-06-02 09:16:28.400 [info]
+09:16:29 075:000 > 2025-06-02 09:16:29.175 [info]
+09:16:29 076:000 > 2025-06-02 09:16:29.938 [info]
+09:16:30 077:000 > 2025-06-02 09:16:30.740 [info] .
+09:16:32 078:000 > 2025-06-02 09:16:32.127 [info]
+09:16:32 079:000 > 2025-06-02 09:16:32.300 [info]
+09:16:33 080:000 > 2025-06-02 09:16:33.087 [info]
+09:16:33 081:000 > 2025-06-02 09:16:33.861 [info]
+09:16:34 082:000 > 2025-06-02 09:16:34.635 [info] .
+09:16:35 083:000 > 2025-06-02 09:16:35.419 [info]
+09:16:36 084:000 > 2025-06-02 09:16:36.195 [info]
+09:16:36 085:000 > 2025-06-02 09:16:36.974 [info]
+09:16:37 086:000 > 2025-06-02 09:16:37.767 [info]
+09:16:38 087:000 > 2025-06-02 09:16:38.539 [info] .
+09:16:40 088:000 > 2025-06-02 09:16:39.999 [info]
+09:16:40 089:000 > 2025-06-02 09:16:40.230 [info]
+09:16:40 090:000 > 2025-06-02 09:16:40.883 [info]
+09:16:41 091:000 > 2025-06-02 09:16:41.656 [info]
+09:16:42 092:000 > 2025-06-02 09:16:42.441 [info] .
+09:16:43 093:000 > 2025-06-02 09:16:43.448 [info]
+09:16:44 094:000 > 2025-06-02 09:16:43.991 [info]
+09:16:44 095:000 > 2025-06-02 09:16:44.795 [info]
+09:16:45 096:000 > 2025-06-02 09:16:45.559 [info]
+09:16:46 097:000 > 2025-06-02 09:16:46.332 [info] .
+09:16:47 098:000 > 2025-06-02 09:16:47.115 [info]
+09:16:48 099:000 > 2025-06-02 09:16:47.902 [info]
+09:16:49 100:000 > 2025-06-02 09:16:48.675 [info]
+09:16:50 101:000 > 2025-06-02 09:16:49.439 [info]
+09:16:50 102:000 > 2025-06-02 09:16:50.239 [info] .
+09:16:51 103:000 > 2025-06-02 09:16:51.037 [info]
+09:16:52 104:000 > 2025-06-02 09:16:51.796 [info]
+09:16:53 105:000 > 2025-06-02 09:16:52.580 [info]
+09:16:53 106:000 > 2025-06-02 09:16:53.361 [info]
+09:16:55 107:000 > 2025-06-02 09:16:54.893 [info] .
+2025-06-02 09:16:55.225 [info]
+09:16:56 109:000 > 2025-06-02 09:16:55.696 [info]
+09:16:57 110:000 > 2025-06-02 09:16:56.555 [info] 
+2025-06-02 09:16:57.271 [info]
+09:16:58 112:000 > 2025-06-02 09:16:58.033 [info] .
+2025-06-02 09:16:58.807 [info]
+09:17:00 114:000 > 2025-06-02 09:16:59.601 [info] 
+2025-06-02 09:17:00.376 [info]
+09:17:01 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:17:02 116:000 > 2025-06-02 09:17:01.138 [info] 
+2025-06-02 09:17:02.032 [info]  Done!
+09:17:02 119:000 > 2025-06-02 09:17:02.133 [info] Validating download...
+
+2025-06-02 09:17:02.133 [info] Integrity Check succeeded.
+
+2025-06-02 09:17:02.133 [info] Installing package 'OmniSharp for Windows (.NET 6 / x64)'
+
+2025-06-02 09:17:02.133 [info]
+09:17:07 127:000 > 2025-06-02 09:17:06.800 [info] Finished
+
+2025-06-02 09:17:06.801 [info] 
+
+2025-06-02 09:17:06.843 [info] Installing Razor OmniSharp Version = 7.0.0-preview.23363.1...
+2025-06-02 09:17:06.843 [info] 
+
+2025-06-02 09:17:06.843 [info] Platform: win32, x86_64
+
+2025-06-02 09:17:06.843 [info] 
+
+2025-06-02 09:17:06.853 [info] Downloading package 'Razor Language Server for OmniSharp (Windows / x64)' 
+2025-06-02 09:17:07.141 [info] (73852 KB)
+2025-06-02 09:17:07.148 [info] .
+09:17:07 141:000 > 2025-06-02 09:17:07.386 [info]
+
+09:17:07 023:004 > s
+09:17:07 142:000 > 2025-06-02 09:17:07.542 [info] 
+2025-06-02 09:17:07.620 [info]
+09:17:07 023:005 > t
+09:17:07 023:006 > tr
+09:17:07 144:000 > 2025-06-02 09:17:07.734 [info]
+09:17:07 023:007 > i
+09:17:08 145:000 > 2025-06-02 09:17:07.904 [info] .
+09:17:08 023:008 > n
+09:17:08 023:009 > ng
+09:17:09 146:000 > 2025-06-02 09:17:09.391 [info]
+09:17:10 147:000 > 2025-06-02 09:17:10.586 [info]
+09:17:11 148:000 > 2025-06-02 09:17:11.521 [info]
+09:17:12 149:000 > 2025-06-02 09:17:12.700 [info]
+09:17:13 150:000 > 2025-06-02 09:17:13.869 [info] .
+09:17:14 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:17:15 151:000 > 2025-06-02 09:17:15.070 [info]
+09:17:15 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:17:16 152:000 > 2025-06-02 09:17:16.243 [info]
+09:17:17 023:011 > A
+09:17:17 023:012 > Ak
+09:17:17 023:013 > Akt
+09:17:17 023:014 > Akti
+09:17:17 153:000 > 2025-06-02 09:17:17.457 [info]
+09:17:17 023:015 > v
+09:17:17 023:016 > vi
+09:17:17 023:017 > vit
+09:17:18 023:018 > vite
+09:17:18 023:019 > vitet
+09:17:18 154:000 > 2025-06-02 09:17:18.643 [info]
+09:17:18 023:021 > =
+09:17:19 155:000 > 2025-06-02 09:17:19.819 [info] .
+09:17:20 023:023 > t
+09:17:20 023:024 > tx
+09:17:20 023:025 > txb
+09:17:21 156:000 > 2025-06-02 09:17:21.018 [info]
+09:17:21 023:026 > A
+09:17:21 023:027 > Ak
+09:17:22 157:000 > 2025-06-02 09:17:22.196 [info]
+09:17:23 158:000 > 2025-06-02 09:17:23.383 [info]
+09:17:25 159:000 > 2025-06-02 09:17:24.597 [info]
+09:17:25 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:17:26 160:000 > 2025-06-02 09:17:25.774 [info] .
+09:17:27 161:000 > 2025-06-02 09:17:26.959 [info]
+09:17:28 162:000 > 2025-06-02 09:17:28.149 [info]
+09:17:29 163:000 > 2025-06-02 09:17:29.336 [info]
+09:17:30 164:000 > 2025-06-02 09:17:30.512 [info]
+09:17:32 165:000 > 2025-06-02 09:17:31.739 [info] .
+09:17:33 166:000 > 2025-06-02 09:17:32.904 [info]
+09:17:34 167:000 > 2025-06-02 09:17:34.090 [info]
+09:17:36 168:000 > 2025-06-02 09:17:35.276 [info]
+09:17:37 169:000 > 2025-06-02 09:17:36.461 [info]
+09:17:38 170:000 > 2025-06-02 09:17:37.647 [info] .
+09:17:38 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:17:39 171:000 > 2025-06-02 09:17:38.849 [info]
+
+09:17:39 024:001 > t
+09:17:39 024:002 > ti
+09:17:40 024:003 > tiv
+09:17:40 172:000 > 2025-06-02 09:17:40.047 [info]
+09:17:41 173:000 > 2025-06-02 09:17:41.223 [info]
+
+09:17:42 023:028 > t
+09:17:42 174:000 > 2025-06-02 09:17:42.418 [info]
+09:17:42 023:029 > i
+09:17:43 023:030 > iv
+09:17:43 023:031 > ivi
+09:17:43 175:000 > 2025-06-02 09:17:43.593 [info] .
+09:17:43 023:032 > t
+09:17:44 023:033 > te
+09:17:44 023:034 > tet
+09:17:45 176:000 > 2025-06-02 09:17:44.774 [info]
+
+09:17:45 024:004 > s
+09:17:45 024:005 > st
+09:17:46 024:006 > str
+09:17:46 024:007 > stri
+09:17:46 024:008 > strin
+09:17:46 024:009 > string
+09:17:46 177:000 > 2025-06-02 09:17:45.999 [info]
+09:17:47 178:000 > 2025-06-02 09:17:47.176 [info]
+09:17:49 179:000 > 2025-06-02 09:17:48.353 [info]
+09:17:50 180:000 > 2025-06-02 09:17:49.534 [info] .
+09:17:51 181:000 > 2025-06-02 09:17:50.720 [info]
+09:17:51 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:17:52 182:000 > 2025-06-02 09:17:51.947 [info]
+09:17:53 183:000 > 2025-06-02 09:17:53.117 [info]
+09:17:54 184:000 > 2025-06-02 09:17:54.303 [info]
+09:17:55 185:000 > 2025-06-02 09:17:55.473 [info] .
+09:17:57 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:17:57 186:000 > 2025-06-02 09:17:56.688 [info]
+09:17:58 024:011 > L
+09:17:58 187:000 > 2025-06-02 09:17:57.866 [info]
+09:17:58 024:012 > ä
+09:17:58 024:013 > än
+09:17:59 024:014 > äng
+09:17:59 188:000 > 2025-06-02 09:17:59.052 [info]
+09:17:59 024:015 > f
+09:17:59 024:016 > fd
+09:18:00 024:014 > fd d
+09:18:01 189:000 > 2025-06-02 09:18:00.230 [info]
+09:18:01 024:014 > g
+09:18:01 024:015 > gd
+09:18:01 024:017 > gd =
+09:18:02 190:000 > 2025-06-02 09:18:01.417 [info] .
+09:18:03 191:000 > 2025-06-02 09:18:02.635 [info]
+09:18:03 024:017 > =
+09:18:04 024:019 > = T
+09:18:04 024:020 > = TX
+09:18:04 192:000 > 2025-06-02 09:18:03.817 [info]
+09:18:04 024:021 > B
+09:18:05 193:000 > 2025-06-02 09:18:05.010 [info]
+09:18:06 194:000 > 2025-06-02 09:18:06.182 [info]
+09:18:07 024:019 > t
+09:18:07 195:000 > 2025-06-02 09:18:07.399 [info] .
+09:18:08 024:020 > x
+09:18:08 024:021 > xb
+09:18:08 024:022 > xbl
+09:18:08 024:023 > xblä
+09:18:09 196:000 > 2025-06-02 09:18:08.573 [info]
+09:18:10 197:000 > 2025-06-02 09:18:09.764 [info]
+09:18:11 024:022 > L
+09:18:11 198:000 > 2025-06-02 09:18:10.943 [info]
+09:18:12 024:023 > ä
+09:18:12 199:000 > 2025-06-02 09:18:12.135 [info]
+09:18:13 200:000 > 2025-06-02 09:18:13.311 [info] .
+09:18:14 024:024 > n
+09:18:14 024:025 > ng
+09:18:14 024:026 > ngd
+09:18:14 201:000 > 2025-06-02 09:18:14.528 [info]
+09:18:16 202:000 > 2025-06-02 09:18:15.704 [info]
+09:18:16 024:027 > .
+09:18:17 024:028 > .T
+09:18:17 024:029 > .Te
+09:18:17 203:000 > 2025-06-02 09:18:16.892 [info]
+09:18:17 024:030 > x
+09:18:17 024:031 > xt
+09:18:18 204:000 > 2025-06-02 09:18:18.091 [info]
+09:18:18 024:032 > ;
+09:18:19 205:000 > 2025-06-02 09:18:19.277 [info] .
+09:18:20 206:000 > 2025-06-02 09:18:20.450 [info]
+09:18:22 207:000 > 2025-06-02 09:18:21.639 [info]
+09:18:23 208:000 > 2025-06-02 09:18:22.845 [info]
+
+09:18:23 023:035 > .
+09:18:24 023:036 > .T
+09:18:24 209:000 > 2025-06-02 09:18:24.032 [info]
+09:18:24 023:037 > e
+09:18:24 023:038 > ec
+09:18:24 023:039 > ect
+09:18:25 210:000 > 2025-06-02 09:18:25.216 [info] .
+09:18:25 023:038 > x
+09:18:26 023:039 > xy
+09:18:26 211:000 > 2025-06-02 09:18:26.417 [info]
+09:18:28 023:039 > t
+09:18:28 212:000 > 2025-06-02 09:18:27.590 [info]
+09:18:29 213:000 > 2025-06-02 09:18:28.787 [info]
+
+09:18:30 025:004 > s
+09:18:30 214:000 > 2025-06-02 09:18:29.969 [info]
+09:18:30 025:005 > t
+09:18:30 025:006 > tr
+09:18:30 025:007 > tri
+09:18:30 025:008 > trin
+09:18:30 025:009 > tring
+09:18:31 025:004 > string
+09:18:31 215:000 > 2025-06-02 09:18:31.180 [info] .
+09:18:32 216:000 > 2025-06-02 09:18:32.343 [info]
+09:18:34 217:000 > 2025-06-02 09:18:33.565 [info]
+09:18:34 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:18:35 218:000 > 2025-06-02 09:18:34.757 [info]
+09:18:36 219:000 > 2025-06-02 09:18:35.933 [info]
+09:18:37 220:000 > 2025-06-02 09:18:37.127 [info] .
+09:18:38 221:000 > 2025-06-02 09:18:38.304 [info]
+09:18:40 222:000 > 2025-06-02 09:18:39.554 [info]
+09:18:41 223:000 > 2025-06-02 09:18:40.766 [info]
+09:18:42 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:18:42 224:000 > 2025-06-02 09:18:41.981 [info]
+09:18:43 025:011 > I
+09:18:43 225:000 > 2025-06-02 09:18:43.166 [info] .
+09:18:44 025:012 > n
+09:18:44 025:013 > nt
+09:18:44 025:014 > nte
+09:18:44 025:015 > ntes
+09:18:44 025:016 > ntesn
+09:18:44 226:000 > 2025-06-02 09:18:44.375 [info]
+09:18:45 227:000 > 2025-06-02 09:18:45.531 [info]
+09:18:46 025:015 > n
+09:18:46 025:016 > ns
+09:18:47 025:017 > nsi
+09:18:47 025:018 > nsit
+09:18:47 228:000 > 2025-06-02 09:18:46.736 [info]
+09:18:47 025:019 > e
+09:18:47 025:020 > et
+09:18:48 229:000 > 2025-06-02 09:18:47.905 [info]
+09:18:48 025:022 > =
+09:18:49 230:000 > 2025-06-02 09:18:49.148 [info] .
+09:18:49 025:024 > t
+09:18:49 025:025 > tx
+09:18:50 025:026 > txb
+09:18:51 025:027 > txbI
+09:18:51 231:000 > 2025-06-02 09:18:50.333 [info]
+09:18:51 025:028 > n
+09:18:51 025:029 > ns
+09:18:52 232:000 > 2025-06-02 09:18:51.523 [info]
+09:18:52 025:029 > t
+09:18:52 025:030 > te
+09:18:52 025:031 > ten
+09:18:53 233:000 > 2025-06-02 09:18:52.693 [info]
+09:18:53 025:032 > s
+09:18:53 025:033 > si
+09:18:54 025:034 > sit
+09:18:54 025:035 > site
+09:18:54 025:036 > sitet
+09:18:54 234:000 > 2025-06-02 09:18:53.886 [info]
+09:18:54 025:037 > .
+09:18:55 025:038 > .T
+09:18:55 025:039 > .Te
+09:18:55 025:040 > .Tex
+09:18:55 025:041 > .Text
+09:18:55 235:000 > 2025-06-02 09:18:55.059 [info] .
+09:18:56 025:038 > Text
+09:18:56 236:000 > 2025-06-02 09:18:56.280 [info]
+09:18:58 237:000 > 2025-06-02 09:18:57.472 [info]
+
+09:18:58 027:004 > t
+09:18:58 027:005 > tx
+09:18:58 027:006 > txb
+09:18:59 027:007 > txbR
+09:18:59 238:000 > 2025-06-02 09:18:58.652 [info]
+09:18:59 027:008 > e
+09:18:59 027:009 > es
+09:19:00 027:010 > esu
+09:19:00 027:011 > esul
+09:19:00 027:012 > esult
+09:19:00 239:000 > 2025-06-02 09:18:59.827 [info]
+09:19:00 027:013 > a
+09:19:00 027:014 > at
+09:19:01 240:000 > 2025-06-02 09:19:01.138 [info]  Done!
+
+2025-06-02 09:19:01.144 [info] Installing package 'Razor Language Server for OmniSharp (Windows / x64)'
+
+2025-06-02 09:19:01.144 [info]
+09:19:02 027:015 > .
+09:19:02 027:016 > .T
+09:19:03 027:017 > .Te
+09:19:03 027:018 > .Tex
+09:19:03 027:019 > .Text
+09:19:04 027:021 > .Text =
+09:19:08 027:023 > .Text = $
+09:19:08 027:024 > ""
+09:19:11 027:025 > {}
+09:19:12 027:026 > A
+09:19:12 027:027 > Ak
+09:19:12 027:028 > Akt
+09:19:12 027:029 > Akti
+09:19:13 027:026 > Aktivitet
+09:19:15 027:036 > \
+
+09:19:16 028:001 > n
+
+09:19:19 027:037 > n
+09:19:21 027:038 > {}
+09:19:22 027:039 > L
+09:19:23 027:040 > Lä
+09:19:24 027:039 > Längd
+09:19:26 027:045 > \
+09:19:27 027:046 > \n
+
+09:19:31 025:042 > ;
+
+09:19:33 024:032 > ;
+
+09:19:34 023:040 > ;
+09:19:37 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:20:00 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:20:49 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:20:59 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+
+09:21:18 022:000 > s
+09:21:18 022:001 > st
+09:21:18 022:002 > str
+09:21:18 022:003 > stri
+09:21:18 022:004 > strin
+09:21:19 022:005 > string
+09:21:20 022:007 > string A
+09:21:20 022:008 > string Ak
+09:21:20 022:009 > string Akt
+09:21:20 022:010 > string Akti
+09:21:20 022:011 > string Aktiv
+09:21:21 022:012 > string Aktivi
+09:21:21 022:013 > string Aktivit
+09:21:21 022:014 > string Aktivite
+09:21:21 022:015 > string Aktivitet
+09:21:27 022:017 > string Aktivitet   =
+09:21:29 022:019 > txbAktivitet
+09:21:30 022:031 > .
+09:21:31 022:032 > .T
+09:21:31 022:033 > .Te
+09:21:31 022:034 > .Tex
+09:21:31 022:035 > .Text
+09:21:32 022:032 > Text
+09:21:32 022:036 > ;
+09:21:42 022:000 > ;e
+09:21:42 022:001 > ;ev
+09:21:42 022:002 > ;eve
+09:21:42 022:003 > ;even
+09:21:44 022:000 > private void (object sender, RoutedEventArgs e)
+{
+    
+}
+09:21:46 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:21:58 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:22:10 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:22:12 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+09:22:12 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:22:29 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:22:31 022:013 > K
+09:22:31 022:014 > Kl
+09:22:32 022:015 > Kli
+09:22:32 022:016 > Klic
+09:22:32 022:017 > Klick
+09:22:32 022:018 > KlickV
+09:22:33 022:019 > KlickVi
+09:22:33 022:020 > KlickVis
+09:22:33 022:021 > KlickVisa
+
+09:22:35 024:004 > s
+09:22:35 024:005 > st
+09:22:36 024:006 > str
+09:22:36 024:007 > stri
+09:22:36 024:008 > strin
+09:22:36 024:009 > string
+09:23:26 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:23:28 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:23:32 024:011 > string  a
+09:23:32 024:012 > string  ak
+09:23:33 024:011 > string  ak A
+09:23:34 024:012 > string  ak Ak
+09:23:34 024:013 > string  ak Akt
+09:23:34 024:014 > string  ak Akti
+09:23:35 024:015 > string  ak Aktiv
+09:23:35 024:016 > string  ak Aktivi
+09:23:35 024:017 > string  ak Aktivit
+09:23:35 024:018 > string  ak Aktivite
+09:23:35 024:019 > string  ak Aktivitet
+09:23:36 024:021 > string  ak Aktivitet =
+09:23:37 024:023 > string  ak Aktivitet = t
+09:23:37 024:024 > string  ak Aktivitet = tx
+09:23:37 024:025 > string  ak Aktivitet = txb
+09:23:38 024:026 > string  ak Aktivitet = txbA
+09:23:39 024:027 > string  ak Aktivitet = txbAk
+09:23:40 024:023 > txbAktivitet
+09:23:40 024:035 > .
+09:23:41 024:036 > .T
+09:23:41 024:037 > .Te
+09:23:41 024:038 > .Tex
+09:23:41 024:039 > .Text
+09:23:42 024:036 > Text
+09:23:42 024:040 > ;
+
+09:23:44 025:008 > s
+09:23:44 025:009 > st
+09:23:44 025:010 > str
+09:23:46 025:011 > stri
+09:23:46 025:012 > strin
+09:23:46 025:013 > string
+09:23:46 025:008 > string
+09:23:56 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:23:59 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+09:24:00 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:24:16 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:24:21 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+09:24:21 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:24:26 025:008 >  s
+09:24:26 025:009 >  st
+09:24:27 025:011 >  stri
+09:24:27 025:012 >  strin
+09:24:27 025:010 >  str
+09:24:27 025:013 >  string
+09:24:27 025:008 > string
+09:24:42 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:24:43 025:015 >  S
+09:24:44 025:016 >  Sp
+09:24:44 025:017 >  Spa
+09:24:44 025:018 >  Spar
+09:24:45 025:019 >  Spara
+09:24:54 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:24:55 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+09:25:05 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:25:07 025:008 >  Sparas
+09:25:07 025:009 >  Sparast
+09:25:07 025:010 >  Sparastr
+09:25:07 025:011 >  Sparastri
+09:25:07 025:012 >  Sparastrin
+09:25:08 025:013 >  Sparastring
+09:25:13 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:25:14 025:015 >  Sparastring L
+09:25:14 025:016 >  Sparastring Lä
+09:25:15 025:017 >  Sparastring Län
+09:25:15 025:018 >  Sparastring Läng
+09:25:15 025:019 >  Sparastring Längd
+09:25:16 025:021 >  Sparastring Längd =
+09:25:17 025:023 >  Sparastring Längd = t
+09:25:17 025:024 >  Sparastring Längd = tx
+09:25:17 025:025 >  Sparastring Längd = txb
+09:25:18 025:026 >  Sparastring Längd = txbL
+09:25:18 025:027 >  Sparastring Längd = txbLä
+09:25:20 025:026 >  Sparastring Längd = txbLäl
+09:25:20 025:027 >  Sparastring Längd = txbLäla
+09:25:22 025:023 > txbLangd
+09:25:23 025:031 > .
+09:25:23 025:032 > .T
+09:25:23 025:033 > .Te
+09:25:23 025:034 > .Tex
+09:25:23 025:035 > .Text
+09:25:24 025:032 > Text
+09:25:24 025:036 > ;
+
+09:25:26 026:008 > s
+09:25:26 026:009 > st
+09:25:27 026:010 > str
+09:25:27 026:011 > stri
+09:25:27 026:012 > strin
+09:25:27 026:013 > string
+09:25:27 026:008 > string
+09:25:28 026:015 >  I
+09:25:29 026:016 >  In
+09:25:29 026:017 >  Int
+09:25:29 026:018 >  Inte
+09:25:29 026:019 >  Inten
+09:25:30 026:020 >  Intens
+09:25:30 026:021 >  Intensi
+09:25:30 026:022 >  Intensit
+09:25:30 026:023 >  Intensite
+09:25:30 026:024 >  Intensitet
+09:25:31 026:026 >  Intensitet =
+09:25:32 026:028 >  Intensitet = t
+09:25:32 026:029 >  Intensitet = tx
+09:25:32 026:030 >  Intensitet = txb
+09:25:33 026:031 >  Intensitet = txbI
+09:25:33 026:032 >  Intensitet = txbIN
+09:25:33 026:033 >  Intensitet = txbINS
+09:25:34 026:033 >  Intensitet = txbINST
+09:25:34 026:028 > txbIntensitet
+09:25:35 026:041 > .
+09:25:36 026:042 > .t
+09:25:36 026:043 > .tE
+09:25:36 026:044 > .tEX
+09:25:36 026:045 > .tEXT
+09:25:39 026:042 > .tEXTT
+09:25:40 026:043 > .tEXTTe
+09:25:40 026:044 > .tEXTTex
+09:25:40 026:045 > .tEXTText
+09:25:40 026:042 > Text
+09:25:41 026:046 > ;
+09:26:05 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+
+09:26:07 028:008 > t
+09:26:08 028:009 > tx
+09:26:08 028:010 > txb
+09:26:09 028:011 > txbR
+09:26:09 028:012 > txbRe
+09:26:10 028:013 > txbRes
+09:26:11 028:014 > txbResu
+09:26:14 028:008 > txbResut
+09:26:14 028:009 > txbResutx
+09:26:14 028:010 > txbResutxb
+09:26:16 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:26:57 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+09:26:58 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:27:08 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:27:16 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:27:18 028:008 > txbPass
+09:27:19 028:015 > .
+09:27:20 028:016 > .T
+09:27:20 028:017 > .Te
+09:27:20 028:018 > .Tex
+09:27:20 028:019 > .Text
+09:27:22 028:021 > .Text =
+09:27:22 028:023 > ""
+09:27:25 028:024 > {}
+09:27:26 028:025 > A
+09:27:26 028:026 > Ak
+09:27:26 028:027 > Akt
+09:27:27 028:028 > Akti
+09:27:27 028:029 > Aktiv
+09:27:27 028:030 > Aktivi
+09:27:27 028:031 > Aktivit
+09:27:28 028:032 > Aktivite
+09:27:28 028:033 > Aktivitet
+09:27:33 028:023 > Aktivitet $
+09:27:38 028:036 > {}
+09:27:38 028:037 > n
+09:27:40 028:036 > n\
+09:27:41 028:037 > n\n
+09:27:43 028:038 > {}
+09:27:44 028:039 > L
+09:27:44 028:040 > Lä
+09:27:45 028:041 > Län
+09:27:45 028:042 > Läng
+09:27:45 028:043 > Längd
+09:27:49 028:045 > Längd\
+09:27:50 028:046 > Längd\n
+09:27:53 028:047 > {}
+09:27:55 028:048 > I
+09:27:55 028:049 > In
+09:27:55 028:050 > Int
+09:27:56 028:051 > Inte
+09:27:56 028:052 > Inten
+09:27:56 028:053 > Intens
+09:27:57 028:054 > Intensi
+09:27:57 028:055 > Intensit
+09:27:57 028:056 > Intensite
+09:27:57 028:057 > Intensitet
+09:27:58 028:048 > Intensitet
+09:28:00 028:060 > ;
+
+09:28:46 032:004 > e
+09:28:47 032:005 > ev
+09:28:47 032:006 > eve
+09:28:47 032:007 > even
+09:28:49 032:004 > private void (object sender, RoutedEventArgs e)
+    {
+        
+    }
+09:28:52 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:28:59 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:29:00 032:017 > K
+09:29:00 032:018 > Kl
+09:29:00 032:019 > Kli
+09:29:00 032:020 > Klic
+09:29:01 032:021 > Klick
+09:29:01 032:022 > KlickS
+09:29:02 032:023 > KlickSp
+09:29:02 032:024 > KlickSpa
+09:29:02 032:025 > KlickSpar
+09:29:02 032:026 > KlickSpara
+
+09:29:04 037:004 > e
+09:29:04 037:005 > ev
+09:29:04 037:006 > eve
+09:29:04 037:007 > even
+09:29:06 037:004 > private void (object sender, RoutedEventArgs e)
+    {
+        
+    }
+09:29:07 037:017 > K
+09:29:07 037:018 > Kl
+09:29:07 037:019 > Kli
+09:29:08 037:020 > Klic
+09:29:08 037:021 > Klick
+09:29:11 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:29:15 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:29:16 037:022 > KlickV
+09:29:16 037:023 > KlickVi
+09:29:16 037:024 > KlickVis
+09:29:17 037:025 > KlickVisa
+09:29:17 037:026 > KlickVisaP
+09:29:17 037:027 > KlickVisaPa
+09:29:17 037:028 > KlickVisaPas
+09:29:17 037:029 > KlickVisaPass
+09:29:22 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+09:29:23 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:29:34 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+
+09:29:36 042:004 > e
+09:29:36 042:005 > ev
+09:29:36 042:006 > eve
+09:29:36 042:007 > even
+09:29:38 042:004 > private void (object sender, RoutedEventArgs e)
+    {
+        
+    }
+09:29:38 042:017 > K
+09:29:39 042:018 > Kl
+09:29:39 042:019 > Kli
+09:29:39 042:020 > Klic
+09:29:39 042:021 > Klick
+09:29:41 042:017 > KlickVisaStatistik
+09:29:46 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:29:52 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+
+09:30:36 028:025 > A
+09:30:36 028:026 > Ak
+09:30:36 028:027 > Akt
+09:30:36 028:028 > Akti
+09:30:37 028:029 > Aktiv
+09:30:37 028:030 > Aktivi
+09:30:37 028:031 > Aktivit
+09:30:37 028:032 > Aktivite
+09:30:37 028:033 > Aktivitet
+09:30:38 028:034 > Aktivitet :
+09:30:46 028:048 > Aktivitet :  L
+09:30:47 028:049 > Aktivitet :  Lä
+09:30:47 028:050 > Aktivitet :  Län
+09:30:47 028:051 > Aktivitet :  Läng
+09:30:47 028:052 > Aktivitet :  Längd
+09:30:50 028:053 > Aktivitet :  Längd(
+09:30:51 028:054 > Aktivitet :  Längd(i
+09:30:52 028:054 > Aktivitet :  Längd(im
+09:30:52 028:055 > Aktivitet :  Längd(imi
+09:30:52 028:056 > Aktivitet :  Längd(imin
+09:30:52 028:057 > Aktivitet :  Längd(imin)
+09:30:55 028:058 > Aktivitet :  Längd(imin):
+09:31:02 028:068 > Aktivitet :  Längd(imin):  I
+09:31:02 028:069 > Aktivitet :  Längd(imin):  In
+09:31:02 028:070 > Aktivitet :  Längd(imin):  Int
+09:31:02 028:071 > Aktivitet :  Längd(imin):  Inte
+09:31:02 028:072 > Aktivitet :  Längd(imin):  Inten
+09:31:03 028:073 > Aktivitet :  Längd(imin):  Intens
+09:31:03 028:074 > Aktivitet :  Längd(imin):  Intensi
+09:31:03 028:075 > Aktivitet :  Längd(imin):  Intensit
+09:31:03 028:076 > Aktivitet :  Längd(imin):  Intensite
+09:31:03 028:077 > Aktivitet :  Längd(imin):  Intensitet
+09:31:04 028:078 > Aktivitet :  Längd(imin):  Intensitet:
+09:32:24 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:32:25 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+09:32:26 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:32:36 028:008 > Aktivitet :  Längd(imin):  Intensitet:i
+09:32:36 028:009 > Aktivitet :  Längd(imin):  Intensitet:if
+09:32:37 028:008 > if (condition)
+        {
+            
+        }
+09:32:45 028:012 > K
+09:32:45 028:013 > Ka
+09:32:45 028:012 > KaA
+09:32:46 028:013 > KaAk
+09:32:46 028:014 > KaAkt
+09:32:46 028:015 > KaAkti
+09:32:46 028:016 > KaAktiv
+09:32:46 028:017 > KaAktivi
+09:32:47 028:018 > KaAktivit
+09:32:47 028:019 > KaAktivite
+09:32:47 028:020 > KaAktivitet
+09:32:47 028:012 > Aktivitet
+09:32:48 028:022 >  =
+09:32:48 028:023 >  ==
+09:32:49 028:025 >  == @
+09:32:50 028:025 > ""
+
+09:33:01 030:012 > x
+09:33:01 030:013 > xt
+09:33:01 030:014 > xtb
+09:33:03 030:012 > xtbt
+09:33:03 030:013 > xtbtx
+09:33:03 030:014 > xtbtxb
+09:33:05 030:015 > xtbtxbP
+09:33:05 030:016 > xtbtxbPa
+09:33:05 030:017 > xtbtxbPas
+09:33:05 030:018 > xtbtxbPass
+09:33:06 030:012 > txbPass
+09:33:06 030:019 > .
+09:33:06 030:020 > .T
+09:33:07 030:021 > .Te
+09:33:07 030:022 > .Tex
+09:33:07 030:023 > .Text
+09:33:08 030:025 > .Text =
+09:33:08 030:027 > ""
+09:33:12 030:027 > $
+09:33:21 030:029 > $ A
+09:33:21 030:030 > $ Ak
+09:33:22 030:031 > $ Akt
+09:33:22 030:032 > $ Akti
+09:33:22 030:033 > $ Aktiv
+09:33:22 030:034 > $ Aktivi
+09:33:24 030:029 > $ AktiviV
+09:33:24 030:030 > $ AktiviVA
+09:33:24 030:031 > $ AktiviVAr
+09:33:24 030:033 > $ AktiviVAr s
+09:33:25 030:029 > $ AktiviVAr sa
+09:33:26 030:029 > $ AktiviVAr saV
+09:33:26 030:030 > $ AktiviVAr saVa
+09:33:27 030:031 > $ AktiviVAr saVar
+09:33:27 030:033 > $ AktiviVAr saVar s
+09:33:28 030:034 > $ AktiviVAr saVar sn
+09:33:28 030:035 > $ AktiviVAr saVar snä
+09:33:28 030:036 > $ AktiviVAr saVar snäl
+09:33:28 030:037 > $ AktiviVAr saVar snäll
+09:33:28 030:039 > $ AktiviVAr saVar snäll o
+09:33:28 030:040 > $ AktiviVAr saVar snäll oc
+09:33:29 030:041 > $ AktiviVAr saVar snäll och
+09:33:29 030:043 > $ AktiviVAr saVar snäll och a
+09:33:29 030:044 > $ AktiviVAr saVar snäll och an
+09:33:29 030:045 > $ AktiviVAr saVar snäll och ang
+09:33:30 030:046 > $ AktiviVAr saVar snäll och ange
+09:33:30 030:048 > $ AktiviVAr saVar snäll och ange a
+09:33:30 030:049 > $ AktiviVAr saVar snäll och ange ak
+09:33:31 030:050 > $ AktiviVAr saVar snäll och ange akt
+09:33:31 030:051 > $ AktiviVAr saVar snäll och ange akti
+09:33:31 030:052 > $ AktiviVAr saVar snäll och ange aktiv
+09:33:31 030:053 > $ AktiviVAr saVar snäll och ange aktivi
+09:33:32 030:054 > $ AktiviVAr saVar snäll och ange aktivit
+09:33:32 030:055 > $ AktiviVAr saVar snäll och ange aktivite
+09:33:32 030:056 > $ AktiviVAr saVar snäll och ange aktivitet
+09:33:34 030:058 > $ AktiviVAr saVar snäll och ange aktivitet;
+
+09:33:36 032:008 > e
+09:33:36 032:009 > el
+09:33:36 032:010 > els
+09:33:36 032:011 > else
+09:33:38 032:008 > else
+        {
+            
+        }
+09:33:46 034:012 > txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+
+09:34:25 034:012 > i
+09:34:25 034:013 > if
+09:34:26 034:012 > if (condition)
+            {
+                
+            }
+09:34:30 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+09:34:44 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:34:47 034:016 > i
+09:34:47 034:017 > in
+09:34:47 034:018 > int
+09:34:48 034:016 > int
+09:34:48 034:019 > .
+09:34:48 034:020 > .T
+09:34:48 034:021 > .Tr
+09:34:49 034:022 > .Try
+09:34:50 034:020 > TryParse
+09:34:51 034:028 > ()
+09:34:54 034:029 > t
+09:34:54 034:030 > tx
+09:34:54 034:031 > txb
+09:34:58 034:029 > txbLangd
+09:34:59 034:037 > ,
+09:35:00 034:039 > , o
+09:35:00 034:040 > , ou
+09:35:00 034:041 > , out
+09:35:00 034:039 > out
+09:35:00 034:043 >  i
+09:35:00 034:044 >  in
+09:35:00 034:045 >  int
+09:35:09 034:047 >  int T
+09:35:10 034:048 >  int Ti
+09:35:10 034:049 >  int Tid
+09:35:11 034:050 >  int Tide
+09:35:11 034:051 >  int Tiden
+09:35:15 034:054 >  int Tiden &
+09:35:15 034:055 >  int Tiden &&
+09:35:17 034:057 >  int Tiden && T
+09:35:17 034:058 >  int Tiden && Ti
+09:35:17 034:059 >  int Tiden && Tid
+09:35:17 034:060 >  int Tiden && Tide
+09:35:18 034:061 >  int Tiden && Tiden
+09:35:18 034:057 > Tiden
+09:35:20 034:063 >   <
+09:35:21 034:064 >   <=
+09:35:26 034:037 >   <= .
+09:35:26 034:038 >   <= .T
+09:35:26 034:039 >   <= .Te
+09:35:26 034:040 >   <= .Tex
+09:35:26 034:041 >   <= .Text
+09:35:41 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:35:45 034:071 >   <= .Text1
+09:35:45 034:072 >   <= .Text18
+09:35:45 034:073 >   <= .Text180
+09:35:47 034:075 >   <= .Text180 &
+09:35:47 034:076 >   <= .Text180 &&
+09:35:49 034:078 >   <= .Text180 && T
+09:35:49 034:079 >   <= .Text180 && Ti
+09:35:49 034:080 >   <= .Text180 && Tid
+09:35:49 034:081 >   <= .Text180 && Tidn
+09:35:49 034:081 >   <= .Text180 && Tidne
+09:35:50 034:082 >   <= .Text180 && Tidnen
+09:35:50 034:078 > Tiden
+09:35:53 034:084 >  <
+09:35:54 034:084 >  <>
+09:35:55 034:085 >  <>=
+09:35:56 034:087 >  <>= 5
+
+09:36:04 036:016 > t
+09:36:04 036:017 > tx
+09:36:04 036:018 > txb
+09:36:06 036:019 > txbP
+09:36:06 036:020 > txbPa
+09:36:06 036:021 > txbPas
+09:36:07 036:022 > txbPass
+09:36:07 036:016 > txbPass
+09:36:07 036:023 > .
+09:36:08 036:024 > .T
+09:36:08 036:025 > .Te
+09:36:08 036:026 > .Tex
+09:36:08 036:027 > .Text
+09:36:10 036:029 > .Text =
+09:36:12 036:031 > ""
+09:36:16 036:032 > O
+09:36:16 036:033 > Og
+09:36:16 036:034 > Ogi
+09:36:17 036:035 > Ogil
+09:36:17 036:036 > Ogilt
+09:36:17 036:037 > Ogilti
+09:36:17 036:038 > Ogiltig
+09:36:18 036:040 > Ogiltig t
+09:36:19 036:041 > Ogiltig ti
+09:36:19 036:042 > Ogiltig tid
+09:36:24 036:044 > Ogiltig tid  ;
+
+09:36:26 038:012 > e
+09:36:27 038:013 > el
+09:36:27 038:014 > els
+09:36:27 038:015 > else
+09:36:28 038:012 > else
+            {
+                
+            }
+09:36:32 040:016 > txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+09:36:52 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+09:36:53 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+09:36:54 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+
+09:36:56 040:016 > i
+09:36:56 040:017 > if
+09:36:58 040:016 > if (condition)
+                {
+                    
+                }
+09:37:07 040:020 > I
+09:37:07 040:021 > In
+09:37:09 040:022 > Int
+09:37:09 040:023 > Inte
+09:37:09 040:024 > Inten
+09:37:10 040:025 > Intens
+09:37:10 040:026 > Intensi
+09:37:10 040:020 > Intensitet
+09:37:12 040:031 >  !
+09:37:12 040:032 >  !=
+09:37:18 040:034 > ""
+09:37:19 040:035 > M
+09:37:19 040:036 > Me
+09:37:20 040:037 > Med
+09:37:20 040:038 > Mede
+09:37:20 040:039 > Medel
+09:37:24 040:042 > Medel |
+09:37:24 040:043 > Medel ||
+09:37:25 040:045 > ""
+09:37:27 040:046 > H
+09:37:27 040:047 > Hö
+09:37:27 040:048 > Hög
+09:37:30 040:050 > Hög |
+09:37:31 040:051 > Hög ||
+09:37:32 040:053 > Hög || "
+09:37:33 040:054 > Hög || ""
+09:37:36 040:054 > Hög || ""L
+09:37:36 040:055 > Hög || ""Lå
+09:37:36 040:056 > Hög || ""Låg
+09:37:45 040:020 > Hög || ""Lågt
+09:37:46 040:021 > Hög || ""Lågtx
+09:37:46 040:022 > Hög || ""Lågtxb
+09:37:48 040:023 > Hög || ""LågtxbI
+09:37:48 040:024 > Hög || ""LågtxbIn
+09:37:48 040:025 > Hög || ""LågtxbInt
+09:37:49 040:026 > Hög || ""LågtxbInte
+09:37:49 040:027 > Hög || ""LågtxbInten
+09:37:49 040:028 > Hög || ""LågtxbIntens
+09:37:49 040:029 > Hög || ""LågtxbIntenst
+09:37:49 040:030 > Hög || ""LågtxbIntensti
+09:37:50 040:031 > Hög || ""LågtxbIntenstie
+09:37:50 040:032 > Hög || ""LågtxbIntenstiet
+09:37:51 040:033 > Hög || ""LågtxbIntenstiet.
+09:37:51 040:034 > Hög || ""LågtxbIntenstiet.T
+09:37:51 040:035 > Hög || ""LågtxbIntenstiet.Te
+09:37:52 040:036 > Hög || ""LågtxbIntenstiet.Tex
+09:37:52 040:037 > Hög || ""LågtxbIntenstiet.Text
+09:38:08 040:020 > Hög || ""LågtxbIntenstiet.TextI
+09:38:08 040:021 > Hög || ""LågtxbIntenstiet.TextIn
+09:38:08 040:022 > Hög || ""LågtxbIntenstiet.TextInt
+09:38:08 040:023 > Hög || ""LågtxbIntenstiet.TextInte
+09:38:08 040:024 > Hög || ""LågtxbIntenstiet.TextInten
+09:38:09 040:025 > Hög || ""LågtxbIntenstiet.TextIntens
+09:38:09 040:026 > Hög || ""LågtxbIntenstiet.TextIntensi
+09:38:09 040:027 > Hög || ""LågtxbIntenstiet.TextIntensit
+09:38:10 040:028 > Hög || ""LågtxbIntenstiet.TextIntensite
+09:38:10 040:029 > Hög || ""LågtxbIntenstiet.TextIntensitet
+09:38:13 040:045 > Hög || ""LågtxbIntenstiet.TextIntensitet I
+09:38:14 040:046 > Hög || ""LågtxbIntenstiet.TextIntensitet In
+09:38:14 040:047 > Hög || ""LågtxbIntenstiet.TextIntensitet Int
+09:38:14 040:048 > Hög || ""LågtxbIntenstiet.TextIntensitet Inte
+09:38:14 040:049 > Hög || ""LågtxbIntenstiet.TextIntensitet Inten
+09:38:15 040:050 > Hög || ""LågtxbIntenstiet.TextIntensitet Intens
+09:38:15 040:051 > Hög || ""LågtxbIntenstiet.TextIntensitet Intensi
+09:38:15 040:052 > Hög || ""LågtxbIntenstiet.TextIntensitet Intensit
+09:38:15 040:053 > Hög || ""LågtxbIntenstiet.TextIntensitet Intensite
+09:38:15 040:054 > Hög || ""LågtxbIntenstiet.TextIntensitet Intensitet
+09:38:17 040:056 > ""
+09:38:17 040:057 > =
+09:38:18 040:056 > =!
+09:38:18 040:057 > =!=
+09:38:21 040:067 > =!=I
+09:38:21 040:068 > =!=In
+09:38:21 040:069 > =!=Int
+09:38:21 040:070 > =!=Inte
+09:38:22 040:071 > =!=Inten
+09:38:22 040:072 > =!=Intens
+09:38:22 040:073 > =!=Intensi
+09:38:22 040:074 > =!=Intensit
+09:38:23 040:075 > =!=Intensite
+09:38:23 040:076 > =!=Intensitet
+09:38:24 040:078 > =!=Intensitet =
+09:38:25 040:079 > =!=Intensitet =!
+09:38:27 040:078 > =!=Intensitet =!!
+09:38:27 040:079 > =!=Intensitet =!!=
+09:38:31 040:063 > =!=Intensitet =!!= "
+
+09:38:45 042:020 > t
+09:38:45 042:021 > tx
+09:38:45 042:022 > txb
+09:38:46 042:023 > txbP
+09:38:46 042:024 > txbPa
+09:38:46 042:025 > txbPas
+09:38:46 042:026 > txbPass
+09:38:47 042:020 > txbPass
+09:38:47 042:027 > ,
+09:38:47 042:027 > ,.
+09:38:48 042:028 > ,.T
+09:38:48 042:029 > ,.Te
+09:38:48 042:030 > ,.Tes
+09:38:49 042:030 > ,.Tesx
+09:38:49 042:031 > ,.Tesxt
+09:38:50 042:033 > ,.Tesxt =
+09:38:52 042:035 > ,.Tesxt = F
+09:38:52 042:036 > ,.Tesxt = Fe
+09:38:52 042:037 > ,.Tesxt = Fel
+09:38:53 042:038 > ,.Tesxt = Fela
+09:38:53 042:039 > ,.Tesxt = Felak
+09:38:53 042:040 > ,.Tesxt = Felakt
+09:38:53 042:041 > ,.Tesxt = Felakti
+09:38:53 042:042 > ,.Tesxt = Felaktig
+09:38:54 042:044 > ,.Tesxt = Felaktig i
+09:38:54 042:045 > ,.Tesxt = Felaktig in
+09:38:54 042:046 > ,.Tesxt = Felaktig int
+09:38:54 042:047 > ,.Tesxt = Felaktig inte
+09:38:54 042:048 > ,.Tesxt = Felaktig inten
+09:38:54 042:049 > ,.Tesxt = Felaktig intens
+09:38:55 042:050 > ,.Tesxt = Felaktig intensi
+09:38:55 042:051 > ,.Tesxt = Felaktig intensit
+09:38:55 042:052 > ,.Tesxt = Felaktig intensite
+09:38:55 042:053 > ,.Tesxt = Felaktig intensitet
+09:38:59 042:035 > ""
+09:38:59 042:036 > G
+09:39:00 042:037 > Ge
+09:39:00 042:036 > GeF
+09:39:00 042:037 > GeFe
+09:39:00 042:038 > GeFel
+09:39:01 042:039 > GeFela
+09:39:01 042:040 > GeFelak
+09:39:01 042:041 > GeFelakt
+09:39:01 042:042 > GeFelakti
+09:39:01 042:043 > GeFelaktig
+09:39:02 042:045 > GeFelaktig i
+09:39:02 042:046 > GeFelaktig in
+09:39:02 042:047 > GeFelaktig int
+09:39:02 042:048 > GeFelaktig inte
+09:39:03 042:049 > GeFelaktig inten
+09:39:03 042:050 > GeFelaktig intens
+09:39:03 042:051 > GeFelaktig intensi
+09:39:03 042:052 > GeFelaktig intensit
+09:39:03 042:053 > GeFelaktig intensite
+09:39:04 042:054 > GeFelaktig intensitet
+09:39:05 042:056 > GeFelaktig intensitet;
+
+09:39:09 044:016 > e
+09:39:09 044:017 > el
+09:39:09 044:018 > els
+09:39:10 044:019 > else
+09:39:11 044:016 > else
+                {
+                    
+                }
+09:39:16 046:020 > txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+09:41:11 036:016 > txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+
+09:41:28 040:016 > t
+09:41:29 040:017 > tx
+09:41:29 040:018 > txb
+09:41:30 040:019 > txbP
+09:41:30 040:020 > txbPa
+09:41:30 040:021 > txbPas
+09:41:30 040:022 > txbPass
+09:41:31 040:016 > txbPass
+09:41:31 040:023 > ,
+09:41:31 040:023 > ,.
+09:41:32 040:024 > ,.T
+09:41:32 040:025 > ,.Te
+09:41:32 040:026 > ,.Tex
+09:41:32 040:027 > ,.Text
+09:41:33 040:029 > ,.Text =
+09:41:35 040:031 > ""
+09:41:38 040:032 > O
+09:41:38 040:033 > Og
+09:41:38 040:034 > Ogi
+09:41:38 040:035 > Ogil
+09:41:38 040:036 > Ogilt
+09:41:38 040:037 > Ogilti
+09:41:38 040:038 > Ogiltig
+09:41:39 040:040 > Ogiltig t
+09:41:39 040:041 > Ogiltig ti
+09:41:39 040:042 > Ogiltig tid
+09:41:41 040:044 > Ogiltig tid ;
+09:42:09 037:016 > if (Intensitet != "Medel" || Intensitet != "Hög" || Intensitet != "Låg")
+                {
+                    txbPass.Text = "Felaktig intensitet";
+                }
+                else
+                {
+                    txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+                }
+09:43:57 045:000 > txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+09:44:12 037:016 > if (Intensitet != "Medel" || Intensitet != "Hög" || Intensitet != "Låg")
+                {
+                    txbPass.Text = "Felaktig intensitet";
+                }
+                else
+                {
+                    txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+                }
+09:44:48 034:012 > if (Intensitet != "Medel" || Intensitet != "Hög" || Intensitet != "Låg")
+                {
+                    txbPass.Text = "Felaktig intensitet";
+                }
+                else
+                {
+                    txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+                }
+09:45:21 040:016 > if (int.TryParse(txbLangd.Text, out int Tiden) && Tiden <= 180 && Tiden >= 5)
+            {
+
+
+            }
+            else
+            {
+                txbPass.Text = "Ogiltig tid";
+
+            }
+09:45:31 043:000 > txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+
+09:45:34 050:004 > }
+
+09:47:43 034:012 > t
+09:47:43 034:013 > tx
+09:47:44 034:014 > txb
+09:47:45 034:015 > txbP
+09:47:45 034:016 > txbPa
+09:47:45 034:017 > txbPas
+09:47:46 034:018 > txbPass
+09:47:46 034:019 > .
+09:47:46 034:012 > txbPass
+09:47:46 034:020 > .T
+09:47:47 034:021 > .Te
+09:47:47 034:022 > .Tex
+09:47:47 034:023 > .Text
+09:47:48 034:025 > .Text =
+09:47:50 034:027 > .Text = $
+09:47:50 034:028 > ""
+09:47:52 034:030 > ;
+09:48:04 034:029 > Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}
+09:49:01 034:012 > i
+09:49:01 034:013 > if
+09:49:03 034:012 > if (condition)
+            {
+                
+            }
+09:49:15 045:000 > if (Intensitet != "Medel" || Intensitet != "Hög" || Intensitet != "Låg")
+            {
+                txbPass.Text = "Felaktig intensitet";
+            }
+            else
+            {
+                if (int.TryParse(txbLangd.Text, out int Tiden) && Tiden <= 180 && Tiden >= 5)
+                {
+                    txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+                }
+                else
+                {
+                    txbPass.Text = "Ogiltig tid";
+
+                }
+
+            }
+09:49:22 034:016 > I
+09:49:22 034:017 > In
+09:49:22 034:018 > Int
+09:49:22 034:019 > Inte
+09:49:23 034:016 > Intensitet
+09:49:25 034:027 >  !
+09:49:25 034:028 >  !=
+09:49:26 034:030 > ""
+09:49:27 034:031 > M
+09:49:27 034:032 > Me
+09:49:27 034:033 > Med
+09:49:28 034:034 > Mede
+09:49:28 034:035 > Medel
+
+09:49:34 036:016 > t
+09:49:34 036:017 > tx
+09:49:34 036:018 > txb
+09:49:35 036:016 > txbAktivitet
+09:49:36 036:028 > .
+09:49:36 036:029 > .P
+09:49:36 036:030 > .Pa
+09:49:37 036:031 > .Pas
+09:49:37 036:032 > .Pass
+09:49:39 036:019 > .PassP
+09:49:39 036:020 > .PassPa
+09:49:39 036:021 > .PassPas
+09:49:39 036:022 > .PassPass
+09:49:40 036:023 > .PassPass.
+09:49:40 036:024 > .PassPass.T
+09:49:41 036:025 > .PassPass.Te
+09:49:41 036:026 > .PassPass.Tex
+09:49:41 036:027 > .PassPass.Text
+09:49:43 036:029 > .PassPass.Text =
+09:49:43 036:030 > ""
+09:49:45 036:031 > ""
+09:49:46 036:032 > F
+09:49:46 036:033 > Fe
+09:49:46 036:034 > Fel
+09:49:47 036:035 > Fela
+09:49:47 036:036 > Felak
+09:49:47 036:037 > Felakt
+09:49:47 036:038 > Felakti
+09:49:47 036:039 > Felaktig
+09:49:48 036:041 > Felaktig i
+09:49:48 036:042 > Felaktig in
+09:49:49 036:043 > Felaktig int
+09:49:49 036:044 > Felaktig inte
+09:49:49 036:045 > Felaktig inten
+09:49:49 036:046 > Felaktig intens
+09:49:49 036:047 > Felaktig intensi
+09:49:49 036:048 > Felaktig intensit
+09:49:50 036:049 > Felaktig intensite
+09:49:50 036:050 > Felaktig intensitet
+09:49:51 036:052 > Felaktig intensitet;
+
+09:51:01 038:012 > e
+09:51:01 038:013 > el
+09:51:01 038:014 > els
+09:51:02 038:015 > else
+09:51:03 038:012 > else
+            {
+                
+            }
+09:51:09 042:011 > txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+09:51:09 040:016 > txbPass.Text = $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+
+09:51:54 034:038 > |
+09:51:54 034:039 > ||
+09:51:56 034:041 > || I
+09:51:56 034:042 > || In
+09:51:56 034:043 > || Int
+09:51:56 034:044 > || Inte
+09:51:56 034:045 > || Inten
+09:51:58 034:041 > Intensitet
+09:52:00 034:052 >  !
+09:52:00 034:053 >  !=
+09:52:01 034:055 > ""
+09:52:02 034:056 > L
+09:52:02 034:057 > Lå
+09:52:03 034:058 > Låg
+09:52:05 034:061 > Låg |
+09:52:05 034:062 > Låg ||
+09:52:07 034:064 > Låg || I
+09:52:08 034:065 > Låg || In
+09:52:08 034:066 > Låg || Int
+09:52:08 034:067 > Låg || Inte
+09:52:08 034:068 > Låg || Inten
+09:52:08 034:069 > Låg || Intens
+09:52:08 034:070 > Låg || Intensi
+09:52:09 034:064 > Intensitet
+09:52:10 034:075 >  !
+09:52:10 034:076 >  !=
+09:52:12 034:078 > ""
+09:52:14 034:079 > H
+09:52:14 034:080 > Hö
+09:52:14 034:081 > Hög
+09:52:53 034:016 > Högt
+09:52:53 034:017 > Högtx
+09:52:54 034:018 > Högtxb
+09:52:55 034:019 > HögtxbU
+09:52:55 034:020 > HögtxbUn
+09:52:57 034:019 > HögtxbUnI
+09:52:57 034:020 > HögtxbUnIn
+09:52:57 034:021 > HögtxbUnInt
+09:52:57 034:022 > HögtxbUnInte
+09:52:57 034:023 > HögtxbUnIntes
+09:52:58 034:024 > HögtxbUnIntesn
+09:52:58 034:026 > HögtxbUnIntesnti
+09:52:58 034:025 > HögtxbUnIntesnt
+09:53:01 034:022 > HögtxbUnIntesntie
+09:53:01 034:023 > HögtxbUnIntesntien
+09:53:02 034:024 > HögtxbUnIntesntiens
+09:53:02 034:025 > HögtxbUnIntesntiensi
+09:53:02 034:026 > HögtxbUnIntesntiensit
+09:53:02 034:027 > HögtxbUnIntesntiensite
+09:53:02 034:028 > HögtxbUnIntesntiensitet
+09:53:04 034:016 > txbIntensitet
+09:53:04 034:029 > .
+09:53:05 034:030 > .T
+09:53:05 034:031 > .Te
+09:53:05 034:032 > .Tex
+09:53:05 034:033 > .Text
+09:53:09 034:049 > .Textt
+09:53:09 034:050 > .Texttx
+09:53:09 034:051 > .Texttxb
+09:53:12 034:062 > .Texttxb.
+09:53:12 034:063 > .Texttxb.T
+09:53:12 034:064 > .Texttxb.Te
+09:53:12 034:065 > .Texttxb.Tex
+09:53:12 034:066 > .Texttxb.Text
+09:53:16 034:080 > .Texttxb.Textt
+09:53:16 034:081 > .Texttxb.Texttx
+09:53:16 034:082 > .Texttxb.Texttxb
+09:53:18 034:093 > .Texttxb.Texttxb.
+09:53:19 034:094 > .Texttxb.Texttxb.T
+09:53:19 034:095 > .Texttxb.Texttxb.Te
+09:53:19 034:096 > .Texttxb.Texttxb.Tex
+09:53:19 034:097 > .Texttxb.Texttxb.Text
+09:54:27 034:016 > .Texttxb.Texttxb.TextI
+09:54:27 034:017 > .Texttxb.Texttxb.TextIn
+09:54:27 034:018 > .Texttxb.Texttxb.TextInt
+09:54:27 034:019 > .Texttxb.Texttxb.TextInte
+09:54:29 034:018 > .Texttxb.Texttxb.TextIntet
+09:54:29 034:019 > .Texttxb.Texttxb.TextIntete
+09:54:29 034:020 > .Texttxb.Texttxb.TextInteten
+09:54:29 034:021 > .Texttxb.Texttxb.TextIntetens
+09:54:29 034:022 > .Texttxb.Texttxb.TextIntetensi
+09:54:29 034:023 > .Texttxb.Texttxb.TextIntetensit
+09:54:29 034:024 > .Texttxb.Texttxb.TextIntetensite
+09:54:29 034:025 > .Texttxb.Texttxb.TextIntetensitet
+09:54:32 034:016 > Intensitet
+09:54:38 034:038 > &
+09:54:38 034:039 > &&
+09:54:42 034:069 > &&&
+09:54:42 034:070 > &&&&
+
+09:55:40 040:016 > i
+09:55:40 040:017 > if
+09:55:43 040:016 > if (condition)
+                {
+                    
+                }
+09:55:45 040:020 > i
+09:55:45 040:021 > in
+09:55:45 040:022 > int
+09:55:46 040:023 > int.
+09:55:46 040:024 > int.T
+09:55:47 040:025 > int.Tr
+09:55:47 040:026 > int.Try
+09:55:48 040:024 > TryParse
+09:55:49 040:032 > ()
+09:55:50 040:033 > t
+09:55:50 040:034 > tx
+09:55:51 040:035 > txb
+09:55:51 040:036 > txbL
+09:55:52 040:037 > txbLa
+09:55:53 040:033 > txbLangd
+09:55:53 040:041 > .
+09:55:54 040:042 > .t
+09:55:54 040:043 > .te
+09:55:54 040:044 > .tex
+09:55:54 040:045 > .text
+09:55:56 040:042 > .textT
+09:55:56 040:043 > .textTe
+09:55:56 040:044 > .textTex
+09:55:56 040:045 > .textText
+09:55:57 040:042 > Text
+09:55:57 040:046 > ,
+09:55:57 040:048 > , o
+09:55:57 040:049 > , ou
+09:55:57 040:050 > , out
+09:55:57 040:052 > , out i
+09:55:58 040:053 > , out in
+09:55:58 040:054 > , out int
+09:55:58 040:052 > int
+09:55:59 040:056 >  T
+09:56:00 040:057 >  Ti
+09:56:00 040:058 >  Tid
+09:56:00 040:059 >  Tide
+09:56:00 040:060 >  Tiden
+09:56:05 040:063 >  Tiden   &
+09:56:05 040:064 >  Tiden   &&
+09:56:06 040:066 >  Tiden   && T
+09:56:06 040:067 >  Tiden   && Ti
+09:56:06 040:068 >  Tiden   && Tid
+09:56:06 040:069 >  Tiden   && Tide
+09:56:06 040:070 >  Tiden   && Tiden
+09:56:07 040:066 > Tiden
+09:56:07 040:072 >  <
+09:56:07 040:073 >  <>
+09:56:09 040:073 >  <>=
+09:56:12 040:075 >  <>= 1
+09:56:12 040:076 >  <>= 18
+09:56:12 040:077 >  <>= 180
+09:56:13 040:079 >  <>= 180 &
+09:56:13 040:080 >  <>= 180 &&
+09:56:15 040:082 >  <>= 180 && T
+09:56:15 040:083 >  <>= 180 && Ti
+09:56:15 040:084 >  <>= 180 && Tid
+09:56:15 040:085 >  <>= 180 && Tide
+09:56:15 040:086 >  <>= 180 && Tiden
+09:56:16 040:082 > Tiden
+09:56:18 040:088 >   z
+09:56:18 040:088 >   z<
+09:56:20 040:088 >   z<>
+09:56:21 040:089 >   z<>=
+09:56:22 040:091 >   z<>=  0
+
+09:56:27 042:020 > t
+09:56:27 042:021 > tx
+09:56:28 042:022 > txb
+09:56:29 042:023 > txbP
+09:56:29 042:024 > txbPa
+09:56:29 042:025 > txbPas
+09:56:29 042:026 > txbPass
+09:56:29 042:020 > txbPass
+09:56:29 042:027 > .
+09:56:30 042:028 > .T
+09:56:30 042:029 > .Te
+09:56:30 042:030 > .Tex
+09:56:30 042:031 > .Text
+09:56:32 042:033 > .Text =
+09:56:40 042:034 > $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}";
+
+09:56:44 044:016 > e
+09:56:44 044:017 > el
+09:56:44 044:018 > els
+09:56:44 044:019 > else
+09:56:45 044:016 > else
+                {
+                    
+                }
+
+09:56:46 046:020 > F
+09:56:46 046:021 > Fe
+09:56:47 046:022 > Fel
+09:56:48 046:020 > Felt
+09:56:49 046:021 > Feltx
+09:56:49 046:022 > Feltxb
+09:56:49 046:023 > FeltxbP
+09:56:49 046:024 > FeltxbPa
+09:56:49 046:025 > FeltxbPas
+09:56:49 046:026 > FeltxbPass
+09:56:50 046:027 > FeltxbPasss
+09:56:50 046:028 > FeltxbPasss.
+09:56:51 046:029 > FeltxbPasss.T
+09:56:51 046:030 > FeltxbPasss.Te
+09:56:51 046:031 > FeltxbPasss.Tex
+09:56:51 046:032 > FeltxbPasss.Text
+09:56:52 046:034 > FeltxbPasss.Text =
+09:56:52 046:035 > ""
+09:56:53 046:036 > F
+09:56:53 046:037 > Fr
+09:56:53 046:038 > Fre
+09:56:55 046:036 > FreO
+09:56:55 046:037 > FreOg
+09:56:55 046:038 > FreOgi
+09:56:55 046:039 > FreOgil
+09:56:55 046:040 > FreOgilt
+09:56:55 046:041 > FreOgilti
+09:56:55 046:042 > FreOgiltig
+09:56:56 046:044 > FreOgiltig t
+09:56:56 046:045 > FreOgiltig ti
+09:56:56 046:046 > FreOgiltig tid
+09:56:58 046:044 > FreOgiltig tidl
+09:56:58 046:045 > FreOgiltig tidlä
+09:56:59 046:046 > FreOgiltig tidlän
+09:56:59 046:047 > FreOgiltig tidläng
+09:56:59 046:048 > FreOgiltig tidlängd
+09:57:02 046:050 > FreOgiltig tidlängd;
+
+09:58:02 025:004 > L
+09:58:03 025:005 > Li
+09:58:03 025:006 > Lis
+09:58:03 025:007 > List
+09:58:04 025:004 > List
+09:58:06 025:008 > <
+09:58:06 025:009 > <>
+09:58:08 025:009 > <>s
+09:58:08 025:010 > <>st
+09:58:08 025:011 > <>str
+09:58:08 025:012 > <>stri
+09:58:08 025:013 > <>strin
+09:58:08 025:014 > <>string
+09:58:08 025:009 > string
+09:58:13 025:017 >   T
+09:58:14 025:017 >   TP
+09:58:14 025:018 >   TPa
+09:58:15 025:019 >   TPas
+09:58:15 025:020 >   TPass
+09:58:16 025:020 >   TPassL
+09:58:16 025:021 >   TPassLi
+09:58:16 025:022 >   TPassLis
+09:58:17 025:023 >   TPassList
+09:58:17 025:024 >   TPassLista
+09:58:19 025:025 >   TPassListas
+09:58:27 025:020 >   TPassListass
+09:58:29 025:027 >   TPassListass =
+09:58:30 025:029 > []
+09:58:32 025:031 > ;
+
+09:58:42 069:009 > P
+09:58:43 069:010 > Pa
+09:58:43 069:012 > Pass
+09:58:43 069:011 > Pas
+09:58:43 069:013 > PassL
+09:58:43 069:014 > PassLi
+09:58:43 069:015 > PassLis
+09:58:44 069:016 > PassList
+09:58:44 069:017 > PassLista
+09:58:44 069:009 > PassLista
+09:58:44 069:018 > .
+09:58:45 069:019 > .a
+09:58:45 069:020 > .ad
+09:58:45 069:021 > .add
+09:58:45 069:019 > Add
+09:58:46 069:022 > ()
+09:58:49 069:024 > ;
+09:58:55 069:022 > ;t
+09:58:55 069:023 > ;tx
+09:58:56 069:024 > ;txb
+09:59:03 069:022 > txbPass
+09:59:04 069:029 > .
+09:59:05 069:030 > .T
+09:59:05 069:031 > .Te
+09:59:05 069:032 > .Tex
+09:59:05 069:033 > .Text
+
+09:59:12 074:006 > f
+09:59:12 074:007 > fo
+09:59:12 074:008 > for
+09:59:15 074:006 > foreach (var item in collection)
+      {
+        
+      }
+09:59:19 074:019 > P
+09:59:19 074:020 > Pa
+09:59:19 074:021 > Pas
+09:59:19 074:022 > Pass
+09:59:25 074:027 > PassP
+09:59:26 074:028 > PassPa
+09:59:26 074:029 > PassPas
+09:59:26 074:030 > PassPass
+09:59:26 074:031 > PassPassL
+09:59:27 074:032 > PassPassLi
+09:59:27 074:033 > PassPassLis
+09:59:27 074:034 > PassPassList
+09:59:27 074:035 > PassPassLista
+
+09:59:32 076:008 > P
+09:59:33 076:009 > Pa
+09:59:33 076:010 > Pas
+09:59:33 076:011 > Pass
+09:59:36 076:008 > Passt
+09:59:36 076:009 > Passtx
+09:59:37 076:010 > Passtxb
+09:59:42 076:008 > txbLista
+09:59:44 076:016 > .
+09:59:44 076:017 > .T
+09:59:44 076:018 > .Te
+09:59:44 076:019 > .Tex
+09:59:44 076:020 > .Text
+09:59:45 076:022 > .Text =
+09:59:47 076:024 > .Text = P
+09:59:48 076:025 > .Text = Pa
+09:59:48 076:026 > .Text = Pas
+09:59:48 076:027 > .Text = Pass
+09:59:48 076:028 > .Text = PassL
+09:59:48 076:029 > .Text = PassLi
+09:59:49 076:030 > .Text = PassLis
+09:59:49 076:031 > .Text = PassList
+09:59:49 076:032 > .Text = PassLista
+09:59:51 076:022 > .Text = PassLista?
+09:59:52 076:022 > .Text = PassLista?p
+09:59:54 076:022 > .Text = PassLista?p+
+09:59:55 076:034 > .Text = PassLista?p+;
+10:01:02 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:01:09 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:01:36 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:01:57 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:02:09 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+10:02:10 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:02:11 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+10:02:13 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:02:15 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:02:38 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:02:41 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:02:51 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+10:02:53 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:03:28 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+10:03:29 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:03:31 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:04:01 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+10:04:01 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:04:04 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:05:18 062:022 > $"Aktivitet:{Aktivitet}\nLängd(min):{Längd}\nIntensitet:{Intensitet}"
+10:05:33 062:008 > string Aktivitet = txbAktivitet.Text;
+        string Längd = txbLangd.Text;
+        string Intensitet = txbIntensitet.Text;
+
+10:06:56 066:022 > t
+10:06:56 066:023 > tx
+10:06:56 066:024 > txb
+10:06:57 066:025 > txbP
+10:06:57 066:026 > txbPa
+10:06:57 066:027 > txbPas
+10:06:57 066:028 > txbPass
+10:06:58 066:022 > txbPass
+10:06:58 066:029 > .
+10:06:58 066:030 > .T
+10:06:58 066:031 > .Te
+10:06:59 066:032 > .Tex
+10:06:59 066:033 > .Text
+10:11:54 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:13:05 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:13:06 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+10:14:44 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:14:47 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+10:14:48 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:15:21 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:15:22 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:15:33 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+
+10:15:35 076:000 > s
+10:15:35 076:001 > st
+10:15:35 076:002 > str
+10:15:36 076:003 > stri
+10:15:36 076:004 > strig
+10:15:36 076:000 > string
+10:15:42 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:15:44 076:007 >  A
+10:15:44 076:008 >  At
+10:15:44 076:009 >  Atn
+10:15:44 076:010 >  Atna
+10:15:44 076:011 >  Atnal
+10:15:46 076:008 >  Atnal n
+10:15:46 076:009 >  Atnal nt
+10:15:46 076:010 >  Atnal nta
+10:15:46 076:011 >  Atnal ntal
+10:15:47 076:012 >  Atnal ntalP
+10:15:47 076:013 >  Atnal ntalPa
+10:15:47 076:014 >  Atnal ntalPas
+10:15:47 076:015 >  Atnal ntalPass
+10:15:49 076:017 >  Atnal ntalPass =
+10:15:51 076:019 >  Atnal ntalPass = t
+10:15:51 076:020 >  Atnal ntalPass = tx
+10:15:51 076:021 >  Atnal ntalPass = txb
+10:15:52 076:022 >  Atnal ntalPass = txbA
+10:15:52 076:023 >  Atnal ntalPass = txbAn
+10:15:52 076:024 >  Atnal ntalPass = txbAnt
+10:15:52 076:025 >  Atnal ntalPass = txbAnta
+10:15:53 076:019 > txbAntalPass
+10:15:53 076:031 > .
+10:15:55 076:032 > .T
+10:15:55 076:033 > .Te
+10:15:56 076:034 > .Tex
+10:15:56 076:035 > .Text
+10:15:57 076:032 > Text
+10:15:57 076:036 > ;
+
+10:15:57 077:000 > s
+10:15:57 077:001 > st
+10:15:58 077:002 > str
+10:15:58 077:003 > stri
+10:15:58 077:004 > strin
+10:15:58 077:005 > string
+10:15:58 077:000 > string
+10:16:00 077:007 >  A
+10:16:04 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:16:05 077:007 >  AT
+10:16:05 077:008 >  ATo
+10:16:05 077:009 >  ATot
+10:16:06 077:010 >  ATota
+10:16:06 077:011 >  ATotal
+10:16:07 077:012 >  ATotalL
+10:16:07 077:013 >  ATotalLä
+10:16:08 077:014 >  ATotalLän
+10:16:08 077:015 >  ATotalLäng
+10:16:08 077:016 >  ATotalLängd
+10:16:09 077:018 >  ATotalLängd )
+10:16:10 077:018 >  ATotalLängd )=
+10:16:11 077:020 >  ATotalLängd )= t
+10:16:11 077:021 >  ATotalLängd )= tx
+10:16:11 077:022 >  ATotalLängd )= txb
+10:16:13 077:023 >  ATotalLängd )= txbT
+10:16:14 077:024 >  ATotalLängd )= txbTo
+10:16:14 077:020 > txbTotalMinuter
+10:16:16 077:035 > .
+10:16:17 077:036 > .T
+10:16:17 077:037 > .Te
+10:16:17 077:038 > .Tex
+10:16:17 077:039 > .Text
+10:16:18 077:036 > Text
+10:16:18 077:040 > ;
+
+10:16:20 078:000 > s
+10:16:20 078:001 > st
+10:16:20 078:002 > str
+10:16:20 078:003 > stri
+10:16:20 078:004 > strin
+10:16:21 078:005 > string
+10:16:21 078:000 > string
+10:16:24 078:007 >  L
+10:16:25 078:008 >  Lä
+10:16:25 078:009 >  Län
+10:16:25 078:010 >  Läng
+10:16:25 078:011 >  Längs
+10:16:26 078:012 >  Längst
+10:16:26 078:013 >  Längsta
+10:16:27 078:014 >  LängstaP
+10:16:28 078:015 >  LängstaPa
+10:16:28 078:016 >  LängstaPas
+10:16:28 078:017 >  LängstaPass
+10:16:29 078:019 >  LängstaPass =
+10:16:30 078:021 >  LängstaPass = t
+10:16:30 078:022 >  LängstaPass = tx
+10:16:30 078:023 >  LängstaPass = txb
+10:16:31 078:024 >  LängstaPass = txbL
+10:16:31 078:025 >  LängstaPass = txbLä
+10:16:31 078:026 >  LängstaPass = txbLän
+10:16:32 078:027 >  LängstaPass = txbLäng
+10:16:32 078:028 >  LängstaPass = txbLängs
+10:16:32 078:029 >  LängstaPass = txbLängst
+10:16:32 078:030 >  LängstaPass = txbLängsta
+10:16:34 078:024 >  LängstaPass = txbLängstaP
+10:16:37 078:024 >  LängstaPass = txbLängstaPL
+10:16:37 078:025 >  LängstaPass = txbLängstaPLa
+10:16:52 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml
+----------------------------------------
+10:17:04 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\prov-wpf-e2-TE23E-Eli-Graseman.csproj
+----------------------------------------
+10:17:06 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+10:17:09 078:021 > txbMaxMinuter
+10:17:10 078:034 > .
+10:17:11 078:035 > .T
+10:17:11 078:036 > .Te
+10:17:11 078:037 > .Tex
+10:17:11 078:038 > .Text
+10:17:12 078:035 > Text
+10:17:12 078:039 > ;
+
+10:17:20 080:008 > i
+10:17:21 080:009 > if
+10:17:23 080:008 > if (condition)
+        {
+            
+        }
+10:17:29 080:012 > A
+10:17:29 080:013 > An
+10:17:30 080:014 > Ant
+10:17:30 080:015 > Anta
+10:17:30 080:016 > Antal
+10:17:30 080:017 > AntalP
+10:17:31 080:018 > AntalPs
+10:17:31 080:018 > AntalPsa
+10:17:32 080:019 > AntalPsas
+10:17:32 080:020 > AntalPsass
+10:17:32 080:012 > AntalPass
+10:18:03 Document switched to: c:\Users\eli.graseman\github-classroom\TE23E-PRRPRR01\prov-wpf-e2-TE23E-Eli-Graseman\MainWindow.xaml.cs
+----------------------------------------
+
+10:18:18 079:000 > A
+10:18:18 079:001 > An
+10:18:18 079:002 > Ant
+10:18:18 079:003 > Anta
+10:18:18 079:004 > Antal
+10:18:19 079:005 > AntalP
+10:18:19 079:006 > AntalPa
+10:18:19 079:007 > AntalPas
+10:18:19 079:008 > AntalPass
+10:18:20 079:000 > AntalPass
+10:18:21 079:010 >  =
+10:18:27 079:000 >  = t
+10:18:28 079:001 >  = tx
+10:18:28 079:002 >  = txb
+10:18:29 079:003 >  = txbA
+10:18:29 079:004 >  = txbAn
+10:18:29 079:005 >  = txbAnt
+10:18:29 079:006 >  = txbAnta
+10:18:29 079:007 >  = txbAntal
+10:18:30 079:008 >  = txbAntalP
+10:18:30 079:009 >  = txbAntalPa
+10:18:30 079:010 >  = txbAntalPas
+10:18:30 079:011 >  = txbAntalPass
+10:18:31 079:000 > txbAntalPass
+10:18:31 079:012 > .
+10:18:31 079:013 > .T
+10:18:31 079:014 > .Te
+10:18:32 079:015 > .Tex
+10:18:32 079:016 > .Text
+10:19:16 079:020 > .Text         t
+10:19:16 079:021 > .Text         tx
+10:19:17 079:022 > .Text         txb
+10:19:18 079:023 > .Text         txbL
+10:19:18 079:024 > .Text         txbLi
+10:19:18 079:025 > .Text         txbLis
+10:19:18 079:026 > .Text         txbList
+10:19:18 079:027 > .Text         txbLista
+10:19:19 079:020 > txbLista
+10:19:19 079:028 > .
+10:19:20 079:029 > .T
+10:19:20 079:030 > .Te
+10:19:20 079:031 > .Tex
+10:19:20 079:032 > .Text
+10:19:21 079:029 > Text
+10:19:21 079:033 > .
+10:19:22 079:034 > .C
+10:19:22 079:035 > .Co
+10:19:22 079:036 > .Cou
+10:19:22 079:037 > .Coun
+10:19:22 079:038 > .Count
+10:19:23 079:034 > Count
+10:19:25 079:039 >  ;
+10:19:30 079:020 >  ; P
+10:19:30 079:021 >  ; Pa
+10:19:30 079:022 >  ; Pas
+10:19:30 079:023 >  ; Pass
+10:19:31 079:020 > PassLista
+10:19:31 079:029 > .
+10:19:31 079:030 > .c
+10:19:31 079:031 > .co
+10:19:37 079:020 > PassLista
+10:19:37 079:029 > .
+10:19:39 079:022 > .s
+10:19:39 079:023 > .ss
+10:19:40 079:020 > PassLista
+10:19:41 079:029 > .
+10:19:41 079:030 > .C
+10:19:41 079:031 > .Co
+10:19:42 079:032 > .Cou
+10:19:42 079:033 > .Coun
+10:19:42 079:034 > .Count
+10:19:43 079:035 > .Count ;
+10:21:04 079:020 > .Count ; t
+10:21:04 079:021 > .Count ; tx
+10:21:04 079:022 > .Count ; txb
+10:21:05 079:023 > .Count ; txbL
+10:21:05 079:024 > .Count ; txbLi
+10:21:06 079:025 > .Count ; txbLis
+10:21:06 079:026 > .Count ; txbList
+10:21:06 079:027 > .Count ; txbLista
+10:21:07 079:020 > txbLista
+10:21:07 079:028 > .
+10:21:09 079:030 > . T
+10:21:09 079:031 > . Te
+10:21:09 079:032 > . Tex
+10:21:09 079:033 > . Text
+10:21:10 079:030 > Text
+10:21:16 079:035 >     ?
+10:21:17 079:035 >     ?+
+10:21:19 079:037 >     ?+ 1
+10:21:21 079:038 >     ?+ 1;
+
+10:27:28 000:000 > K
+10:27:28 000:001 > Kl
+10:27:28 000:002 > Kla
+10:27:28 000:003 > Klar
